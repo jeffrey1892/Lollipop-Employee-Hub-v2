@@ -1,0 +1,6 @@
+import { HubTile } from '@/components/HubTile'
+import { IconBrain, IconChat, IconLeaf } from '@/components/Icon'
+
+export default function WellbeingPage() {
+  return <div className="container-wide stack"><section className="hero"><p className="eyebrow" style={{ color: 'var(--leaf)' }}>Wellbeing</p><h1 className="text-display">For yourself</h1><p className="lede">A softer place to reset, learn a useful technique, or talk through what is going on.</p></section><section className="grid-3"><HubTile href="/check-in" eyebrow="Quick reset · ~2 min" title="Mindfulness check-in" body="Start with your mood, pick a few emotions, and get practices that fit your time." cta="Start check-in" tone="well" icon={<IconLeaf />} /><HubTile href="/cbt" eyebrow="51+ evidence-based moves" title="Cognitive Behavioral Techniques" body="Browse grounding, breathing, reframing, self-compassion, and behavioral practices." cta="Browse CBT" tone="work" icon={<IconBrain />} /><HubTile href="/chat?topic=wellbeing" eyebrow="Talk it through" title="A short conversation" body="A calm chat about stress, mindfulness, thoughts, or what you need next." cta="Start wellbeing chat" tone="chat" icon={<IconChat />} /></section></div>
+}
